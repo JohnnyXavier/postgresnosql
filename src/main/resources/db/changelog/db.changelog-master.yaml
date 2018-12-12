@@ -1,0 +1,15 @@
+databaseChangeLog:
+- changeSet:
+    id: 1
+    author: Johnny Xavier
+    changes:
+    - sqlFile:
+        path: ../sql/dbCreation.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 2
+    author: Johnny Xavier
+    changes:
+    - sqlFile:
+        path: ../sql/db_first_users_seed.sql
+        relativeToChangelogFile: true
