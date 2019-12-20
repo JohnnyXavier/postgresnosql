@@ -1,7 +1,6 @@
 --create the DB
 set search_path to postgres_no_sql;
 
-
 create table if not exists users_sql
 (
   id         serial8 primary key,
@@ -25,5 +24,4 @@ create table if not exists address
   street_number varchar(7),
   city          integer,
   pos_code      varchar(10)
-
-)
+);
